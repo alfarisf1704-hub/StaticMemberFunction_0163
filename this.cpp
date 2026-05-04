@@ -16,6 +16,6 @@ public:
 int main()
 {
     buku bukunya;
-    cout << bukunya.setget();
+    cout << bukunya.setget("matematika");
     return 0;
 }
