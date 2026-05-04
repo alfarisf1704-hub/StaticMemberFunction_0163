@@ -27,6 +27,7 @@ mahasiswa ::mahasiswa(int iNim)
 
 mahasiswa ::mahasiswa()
 {
+    nama = iNama;
 }
 
 mahasiswa ::mahasiswa()
