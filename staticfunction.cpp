@@ -47,4 +47,23 @@ void Mahasiswa ::printALL()
     cout << "ID = " << id << endl;
     cout << "Nama =" << nama << endl;
     cout << endl;
-};
+}
+
+int main()
+{
+
+    Mahasiswa mhs1("Sri Dadi");
+    Mahasiswa mhs2("Budi Jatmiko");
+
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko Wahono");
+
+    mhs1.printALL();
+    mhs2.printALL();
+    mhs3.printALL();
+    mhs4.printALL();
+
+    cout << "Akses dari luar object = " << Mahasiswa::getNim() << endl;
+    system("pause");
+    return 0;
+}
