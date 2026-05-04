@@ -17,4 +17,34 @@ public:
     {
         nim = pnim;
     };
+
+    void printALL();
+    static void setNim(int pnim)
+    {
+        nim = pnim;
+    };
+
+    static int getNim()
+    {
+        return nim;
+    }
+
+    Mahasiswa(string pnama) : nama(pnama)
+    {
+        setID();
+    };
+};
+
+int Mahasiswa ::nim = 0;
+
+void Mahasiswa ::setID()
+{
+    id = ++nim;
+}
+
+void Mahasiswa ::printALL()
+{
+    cout << "ID = " << id << endl;
+    cout << "Nama =" << nama << endl;
+    cout << endl;
 }
